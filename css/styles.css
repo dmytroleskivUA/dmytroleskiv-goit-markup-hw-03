@@ -102,7 +102,7 @@ footer .logo:visited {
 }
 
 .header-nav a.current {
-  color: var(--contact-txt-cl);
+  color: var(--accent-txt-cl);
 }
 
 .header-nav a:active,
@@ -113,6 +113,9 @@ footer .logo:visited {
 .contact a:hover {
   color: var(--accent-txt-cl);
 }
+
+
+
 
 p {
   line-height: 1.5;
@@ -149,7 +152,6 @@ footer {
   background-color: var(--blue-txt-cl);
   cursor: pointer;
   font-family: var(--main-font);
-  font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.04em;
@@ -206,7 +208,6 @@ footer {
   cursor: pointer;
 
   font-family: var(--main-font);
-  font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.04em;
