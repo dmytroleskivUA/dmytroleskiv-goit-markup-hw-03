@@ -35,6 +35,18 @@
 
 }
 
+
+html {
+  box-sizing: border-box;
+}
+
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
 body {
   font-family: var(--main-font);
   font-size: 16px;
@@ -44,25 +56,58 @@ body {
   background-color: var(--main-bg-cl);
   margin: 0 auto;
 
-
 }
 
-.container {
-  margin-left: auto;
-  margin-right: auto;
-  width: 1158px;
-  outline: 1px solid tomato;
-  /* text-align: center; */
-
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
 }
 
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+ul,
+ol {
+  list-style: none;
+  margin: 0;
+  padding-left: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
 
 
 /**
   |============================
-  | Common Rules
+  | Common Rules/ Utility
   |============================
 */
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1128px;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  /* outline: 1px solid tomato; */
+
+}
+
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
 
 
 .list {
@@ -79,9 +124,15 @@ body {
   color: var(--accent-txt-bg-cl);
 }
 
+.text-center {
+  text-align: center;
+}
+
 
 .btn {
+  display: block;
   cursor: pointer;
+  padding: 12px 24px;
   font-family: 'Roboto', sans-serif;
   font-weight: 500;
   font-size: 16px;
@@ -89,14 +140,18 @@ body {
   letter-spacing: 0.04em;
   color: var(--blue-txt-cl);
   background-color: var(--portfolio-filter-btn-borders);
-
+  border: 1px solid var(--accent-txt-bg-cl);
+  border-radius: 4px;
 }
+
+
 
 .btn.current,
 .btn:hover,
 .btn:focus {
   color: var(--light-primary-text-cl);
   background-color: var(--accent-txt-bg-cl);
+  border-color: var(--accent-txt-bg-cl);
 }
 
 .visually-hidden {
@@ -120,6 +175,8 @@ body {
   |============================
 */
 
+/* LOGO */
+
 .logo {
   font-family: 'Raleway', sans-serif;
   font-weight: 800;
@@ -134,54 +191,115 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  width: 1440px;
+  height: 72px;
+  left: 0px;
+  top: 0px;
+}
+
+/* SITE NAV */
+
+
+
+.main-nav {
+
+  display: flex;
+  align-items: center;
+}
+
+
+
+.site-nav {
+  display: flex;
+  margin-left: 76px;
 }
 
 
 .site-nav .item {
-  outline: 2px solid tomato;
+
   margin-right: 40px;
   text-decoration: none;
   list-style: none;
+
+  /* outline: 2px solid tomato; */
 }
 
-.site-nav {
+.site-nav .item+.item {
 
-  display: flex;
+  margin-left: 40px;
 }
 
+/* .site-nav .item:not(:last-child) {
+  margin-right: 40px;
+} */
 
 .site-nav .link {
+  display: block;
+  padding-top: 24px;
+  padding-bottom: 24px;
 
-  font-weight: 500;
-  /* font-size: 16px; */
-  line-height: 1.5;
-  /* letter-spacing: 0.02em; */
   color: var(--primary-text-cl);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+
+
 }
 
 .site-nav .current {
   color: var(--blue-txt-cl);
 }
 
-.contacts-nav .link {
-  /* font-size: 16px; */
-  line-height: 1.5;
-  /* letter-spacing: 0.02em; */
-  color: var(--contact-txt-cl);
-}
+
 
 .site-nav .link:hover,
 .site-nav .link:focus,
-.contacts-nav .link:hover,
-.contacts-nav .link:focus {
+.contact-nav .link:hover,
+.contact-nav .link:focus {
   color: var(--blue-txt-cl);
 }
+
+
+/* CONTACT NAV */
+
+.contact-nav {
+  display: flex;
+  margin-left: auto;
+}
+
+
+.contact-nav .item {
+
+  margin-right: 40px;
+  text-decoration: none;
+  list-style: none;
+
+  /* outline: 2px solid tomato; */
+}
+
+.contact-nav .item+.item {
+
+  margin-left: 40px;
+}
+
+
+.contact-nav .link {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--contact-txt-cl);
+}
+
+
 
 /**
   |============================
   | MAIN INDEX
   |============================
 */
+
 
 /* HERO section */
 
@@ -259,6 +377,7 @@ border-radius: 4px;
 }
 
 /* TEAM section */
+
 .team {
   background-color: var(--our-tem-bg-cl);
 }
