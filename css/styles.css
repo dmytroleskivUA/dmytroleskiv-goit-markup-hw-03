@@ -42,16 +42,15 @@
 }
 
 
-html {
-  box-sizing: border-box;
-}
+/* global border box */
 
 
 *,
 *::before,
 *::after {
-  box-sizing: inherit;
+  box-sizing: border-box;
 }
+
 
 body {
   font-family: var(--main-font);
@@ -63,6 +62,8 @@ body {
   margin: 0 auto;
 
 }
+
+/* reset standart style */
 
 h1,
 h2,
