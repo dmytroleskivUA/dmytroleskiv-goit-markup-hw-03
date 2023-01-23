@@ -24,6 +24,7 @@
   --light-primary-text-cl: #FFFFFF;
   --footer-logo-light-txt-cl: #F4F4FD;
   --footer-light-txt-cl: #E7E9FC;
+  --borders-light-cl: #E7E9FC;
 
   /* BACKGROUND COLORS */
   --main-bg-cl: #FFFFFF;
@@ -289,6 +290,7 @@ a {
 } */
 
 .site-nav .link {
+  display: block;
   font-weight: 500;
   line-height: 1.5;
   color: var(--primary-text-cl);
@@ -470,7 +472,7 @@ a {
 }
 
 .portfolio-cards .card-content {
-  border: 1px solid var(--accent-color);
+  border: 1px solid var(--borders-light-cl);
   border-top: 0;
   padding-top: 32px;
   padding-bottom: 32px;
