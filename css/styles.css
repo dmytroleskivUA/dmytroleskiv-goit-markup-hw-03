@@ -59,11 +59,10 @@
 body {
   font-family: var(--main-font);
   font-size: 16px;
-  line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--secondary-txt-cl);
   background-color: var(--main-bg-cl);
-  margin: 0 auto;
+
 
 }
 
@@ -97,13 +96,6 @@ a {
   color: inherit;
 }
 
-
-/**
-  |============================
-  | Common Rules/ Utility
-  |============================
-*/
-
 .container {
   margin-left: auto;
   margin-right: auto;
@@ -111,11 +103,18 @@ a {
   padding-left: 15px;
   padding-right: 15px;
 
-  /* outline: 1px solid tomato; */
+
+  /**
+  |============================
+  | Common Rules/ Utility
+  |============================
+*/
+
+
 
 }
 
-.mx-auto {
+.centered {
   margin-left: auto;
   margin-right: auto;
 }
@@ -139,6 +138,7 @@ a {
 .btn .btn-hero.centered {
 
   text-align: center;
+
 }
 
 .text-center {
@@ -226,30 +226,33 @@ a {
   |   HEADER 
   |============================
 */
+
+
 header {
-  border-bottom: 1px solid var(--color-for-footer-text);
+  border-bottom: 1px solid var(--portfolio-filter-btn-borders);
   box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 .page-header {
-  display: block;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  border-bottom: 1px solid var(--portfolio-filter-btn-borders);
-}
+  padding-top: 24px;
+  padding-bottom: 24px;
 
+}
 
 .page-header .container {
   display: flex;
-  padding-top: 24px;
-  padding-bottom: 24px;
+
+}
+
+.main-nav {
+
+  display: flex;
+  align-items: center;
 }
 
 /* LOGO */
 
 .logo {
-  margin-right: 76px;
 
   font-family: 'Raleway', sans-serif;
   font-weight: 800;
@@ -266,15 +269,6 @@ header {
 /* SITE NAV */
 
 
-
-.main-nav {
-
-  display: flex;
-  align-items: center;
-}
-
-
-
 .site-nav {
   display: flex;
   margin-left: 76px;
@@ -283,7 +277,7 @@ header {
 
 .site-nav .item {
 
-  margin-right: 40px;
+
   text-decoration: none;
   list-style: none;
 
@@ -330,7 +324,7 @@ header {
 
 .contact-nav .item {
 
-  margin-right: 40px;
+
   text-decoration: none;
   list-style: none;
 
@@ -370,16 +364,12 @@ header {
   padding-top: 188px;
   padding-bottom: 188px;
   background-color: var(--hero-footer-bg-cl);
+  text-align: center;
 
-
-}
-
-.title {
-  margin-top: 0;
-  margin-bottom: 0;
 }
 
 .hero-title {
+
   color: var(--main-bg-cl);
   font-weight: 700;
   font-size: 56px;
@@ -387,25 +377,18 @@ header {
   letter-spacing: 0.02em;
   max-width: 500px;
   text-align: center;
-
+  margin: 0 auto;
 
 
 }
 
 .btn-hero {
-  display: inline;
   margin-top: 48px;
   padding: 16px 32px;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.04em;
-  text-transform: capitalize;
   color: var(--light-primary-text-cl);
   background-color: var(--blue-txt-cl);
   border-color: var(--blue-txt-cl);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
+
 }
 
 /* ABOUT SECTION */
@@ -428,6 +411,7 @@ header {
   display: flex;
   justify-content: center;
   margin-top: 72px;
+
 }
 
 .work-list>.item:not(:last-child) {
