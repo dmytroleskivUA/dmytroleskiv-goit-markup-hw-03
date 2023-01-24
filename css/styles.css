@@ -13,6 +13,10 @@
   --logo-dark-txt-cl: #2E2F42;
   --contact-txt-cl: #434455;
 
+  /* LIGHT SLATE */
+
+  --light-slate-border-cl: #8E8F99;
+
   /* IRIS 4d / OCEAN 404 */
   --accent-txt-bg-cl: #404BBF;
   --blue-txt-cl: #4D5AE5;
@@ -118,6 +122,7 @@ a {
 
 
 .list {
+
   padding: 0;
   margin: 0;
   list-style: none;
@@ -151,8 +156,8 @@ a {
   line-height: 1.5;
   letter-spacing: 0.04em;
   color: var(--blue-txt-cl);
-  background-color: var(--portfolio-filter-btn-borders);
-  border: 1px solid var(--accent-txt-bg-cl);
+  background-color: var(---footer-logo-light-txt-cl);
+  border: 1px solid var(--borders-light-cl);
   border-radius: 4px;
 }
 
@@ -288,6 +293,7 @@ header {
 .site-nav .item+.item {
 
   margin-left: 40px;
+
 }
 
 /* .site-nav .item:not(:last-child) {
