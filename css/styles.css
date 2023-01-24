@@ -467,6 +467,11 @@ header {
   |============================
 */
 
+.btn-port {
+
+  background-color: var(--portfolio-filter-button-bg-cl);
+}
+
 
 .portfolio-nav {
   display: flex;
