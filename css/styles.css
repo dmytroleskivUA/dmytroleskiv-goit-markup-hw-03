@@ -57,11 +57,11 @@
 
 
 body {
-  font-family: var(--main-font);
-  font-size: 16px;
-  letter-spacing: 0.02em;
-  color: var(--secondary-txt-cl);
   background-color: var(--main-bg-cl);
+  color: var(--secondary-txt-cl);
+  font-size: 16px;
+  font-family: var(--main-font);
+  letter-spacing: 0.02em;
 
 
 }
@@ -86,22 +86,22 @@ img {
 
 ul,
 ol {
-  list-style: none;
   margin: 0;
   padding-left: 0;
+  list-style: none;
 }
 
 a {
-  text-decoration: none;
   color: inherit;
+  text-decoration: none;
 }
 
 .container {
-  margin-left: auto;
-  margin-right: auto;
   width: 1158px;
-  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
   padding-right: 15px;
+  padding-left: 15px;
 
 
   /**
@@ -115,15 +115,15 @@ a {
 }
 
 .centered {
-  margin-left: auto;
   margin-right: auto;
+  margin-left: auto;
 }
 
 
 .list {
+  margin: 0;
 
   padding: 0;
-  margin: 0;
   list-style: none;
 }
 
@@ -148,17 +148,17 @@ a {
 
 .btn {
   display: block;
-  cursor: pointer;
   padding: 12px 24px;
-  font-family: 'Roboto', sans-serif;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.04em;
-  color: var(--blue-txt-cl);
-  background-color: var(---footer-logo-light-txt-cl);
   border: 1px solid var(--borders-light-cl);
   border-radius: 4px;
+  background-color: var(---footer-logo-light-txt-cl);
+  color: var(--blue-txt-cl);
+  font-weight: 500;
+  font-size: 16px;
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  cursor: pointer;
 }
 
 
@@ -166,9 +166,9 @@ a {
 .btn.current,
 .btn:hover,
 .btn:focus {
-  color: var(--light-primary-text-cl);
-  background-color: var(--accent-txt-bg-cl);
   border-color: var(--accent-txt-bg-cl);
+  background-color: var(--accent-txt-bg-cl);
+  color: var(--light-primary-text-cl);
 }
 
 
@@ -185,28 +185,28 @@ a {
 } */
 
 .section .title {
+  color: var(--primary-text-cl);
   font-weight: 700;
   font-size: 36px;
   line-height: 1.11;
   letter-spacing: 0.02em;
-  color: var(--primary-text-cl);
 
   text-align: center;
   text-transform: capitalize;
 }
 
 .section .subtitle {
+  color: var(--primary-text-cl);
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
-  color: var(--primary-text-cl);
 }
 
 .section .text {
-  line-height: 1.5;
   margin-top: 8px;
   color: var(--secondary-txt-cl);
+  line-height: 1.5;
 }
 
 .padtop-0 {
@@ -215,16 +215,16 @@ a {
 
 .visually-hidden {
   position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
   width: 1px;
   height: 1px;
   margin: -1px;
-  border: 0;
   padding: 0;
+  border: 0;
 
   white-space: nowrap;
   clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
 }
 
 
@@ -237,14 +237,14 @@ a {
 /* LOGO */
 
 .logo {
-
-  font-family: 'Raleway', sans-serif;
+  color: var(--primary-text-cl);
   font-weight: 800;
   font-size: 18px;
+
+  font-family: 'Raleway', sans-serif;
   line-height: 1.33;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: var(--primary-text-cl);
 
 }
 
@@ -288,10 +288,10 @@ header {
 
 
 .site-nav .item {
+  list-style: none;
 
 
   text-decoration: none;
-  list-style: none;
 
   /* outline: 2px solid tomato; */
 }
@@ -308,9 +308,9 @@ header {
 
 .site-nav .link {
   display: block;
+  color: var(--primary-text-cl);
   font-weight: 500;
   line-height: 1.5;
-  color: var(--primary-text-cl);
 
 }
 
@@ -335,10 +335,10 @@ header {
 
 
 .contact-nav .item {
+  list-style: none;
 
 
   text-decoration: none;
-  list-style: none;
 
   /* outline: 2px solid tomato; */
 }
@@ -350,9 +350,9 @@ header {
 
 
 .contact-nav .link {
+  color: var(--contact-txt-cl);
 
   line-height: 1.5;
-  color: var(--contact-txt-cl);
 }
 
 
@@ -381,15 +381,15 @@ header {
 }
 
 .hero-title {
+  max-width: 500px;
+  margin: 0 auto;
 
   color: var(--main-bg-cl);
   font-weight: 700;
   font-size: 56px;
   line-height: 1.07;
   letter-spacing: 0.02em;
-  max-width: 500px;
   text-align: center;
-  margin: 0 auto;
 
 
 }
@@ -397,9 +397,9 @@ header {
 .btn-hero {
   margin-top: 48px;
   padding: 16px 32px;
-  color: var(--light-primary-text-cl);
-  background-color: var(--blue-txt-cl);
   border-color: var(--blue-txt-cl);
+  background-color: var(--blue-txt-cl);
+  color: var(--light-primary-text-cl);
 
 }
 
@@ -444,8 +444,8 @@ header {
 
 .team-list>.item {
   flex-basis: calc(100% / 4);
-  background-color: var(--main-bg-cl);
   border-radius: 0px 0px 4px 4px;
+  background-color: var(--main-bg-cl);
 }
 
 .team-list>.item:not(:last-child) {
@@ -494,11 +494,11 @@ header {
 }
 
 .portfolio-cards .card-content {
-  border: 1px solid var(--borders-light-cl);
-  border-top: 0;
   padding-top: 32px;
   padding-bottom: 32px;
   padding-left: 16px;
+  border: 1px solid var(--borders-light-cl);
+  border-top: 0;
 }
 
 
@@ -525,7 +525,7 @@ header {
 
 .page-footer .text {
   display: block;
+  max-width: 270px;
   margin-top: 16px;
   line-height: 1.5;
-  max-width: 270px;
 }
